@@ -12,7 +12,7 @@ Flutter app showing the UI of a car rental application.
 
 Here is a link to the built APK
 
-[Car Rental UI APK](https://drive.google.com/file/d/1QgKiYs4CO4abth8W2m_jFD9di6jkNC9H/view?usp=sharing)
+[Car Rental UI APK](https://drive.google.com/file/d/1n8bdMkEAP9Zcr1j4usOqof4FGevrqmDN/view?usp=sharing)
 
 ### Dependencies
 
