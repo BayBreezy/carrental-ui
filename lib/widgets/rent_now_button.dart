@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:intl/intl.dart';
 
 import '../config/constants.dart';
 import '../models/car.dart';
+import 'rent_sheet.dart';
 
 class RentNow extends StatelessWidget {
   const RentNow({
@@ -30,7 +32,14 @@ class RentNow extends StatelessWidget {
               shape: const StadiumBorder(),
               elevation: 0,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Get.bottomSheet(
+                RentSheet(car: car),
+                barrierColor:
+                    Theme.of(context).scaffoldBackgroundColor.withOpacity(0.5),
+                elevation: 5,
+              );
+            },
             child: const Text("Rent Now"),
           ),
         )

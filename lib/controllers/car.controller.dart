@@ -1,4 +1,5 @@
 import 'package:carrental/models/car.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
@@ -6,6 +7,12 @@ class CarController extends GetxController {
   final List<Car> _cars = dummyCars;
   final _box = GetStorage();
   var favorites = [].obs;
+
+  @override
+  void onInit() {
+    _setFaves();
+    super.onInit();
+  }
 
   List<Car> get allCars => [..._cars];
 
@@ -41,18 +48,26 @@ class CarController extends GetxController {
     //Check if it is present
     if (isPresent != null) {
       faveList.removeWhere((element) => element.toString() == name);
-      Get.snackbar("Car Removed", "Car removed from your list of favorites.");
+      Get.snackbar(
+        "Car Removed",
+        "Car removed from your list of favorites.",
+        snackPosition: SnackPosition.BOTTOM,
+        duration: Duration(seconds: 6),
+        dismissDirection: DismissDirection.horizontal,
+      );
       _saveFaves(faveList);
     } else {
       faveList.add(name.toString());
-      Get.snackbar("Car Added", "Car added to your list of favorites.");
+      Get.snackbar(
+        "Car Added",
+        "Car added to your list of favorites.",
+        snackPosition: SnackPosition.BOTTOM,
+        duration: Duration(seconds: 6),
+        dismissDirection: DismissDirection.horizontal,
+      );
       _saveFaves(faveList);
     }
   }
 
-  @override
-  void onInit() {
-    _setFaves();
-    super.onInit();
-  }
+  //
 }

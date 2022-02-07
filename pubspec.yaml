@@ -35,8 +35,9 @@ flutter:
     - assets/images/cars/
 
 flutter_native_splash:
-  color: "#06040e"
-  image: "assets/images/splash.png"
+  color: "#ffffff"
+  image: "assets/images/icon.png"
+  branding: "assets/images/icon.png"
   android: true
   ios: true
   web: true
@@ -44,4 +45,5 @@ flutter_native_splash:
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/images/splash.png"
+  image_path: "assets/images/icon.png"
+  remove_alpha_ios: true

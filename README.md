@@ -1,16 +1,30 @@
-# carrental
+# Car Rental UI
 
-A new Flutter project.
+Flutter app showing the UI of a car rental application.
 
-## Getting Started
+|                                   Light UI                                    |                                       Dark Ui                                       |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------------: |
+| <img style="display: inline;" src="ss.png" height="200" alt="Register Page"/> | <img style="display: inline;"  src="ss-dark.png" height="200" alt="Register Page"/> |
 
-This project is a starting point for a Flutter application.
+<br/>
 
-A few resources to get you started if this is your first Flutter project:
+## APK Link
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Here is a link to the built APK
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[Car Rental UI APK](https://drive.google.com/file/d/1QgKiYs4CO4abth8W2m_jFD9di6jkNC9H/view?usp=sharing)
+
+### Dependencies
+
+1. [GetX](https://pub.dev/packages/get)
+1. [Get Storage](https://pub.dev/packages/get_storage)
+1. [Intl](https://pub.dev/packages/intl)
+1. [Card Swiper](https://pub.dev/packages/card_swiper)
+1. [Salomon Bottom Bar](https://pub.dev/packages/salomon_bottom_bar)
+1. [Google Fonts](https://pub.dev/packages/google_fonts)
+1. [Flutter Launcher Icons](https://pub.dev/packages/flutter_launcher_icons)
+1. [Flutter Native Splash](https://pub.dev/packages/flutter_native_splash)
+
+# Me?
+
+[Behon Baker](https://behonbaker.com)
